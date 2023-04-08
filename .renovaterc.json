@@ -1,0 +1,29 @@
+{
+  "extends": [
+    ":semanticCommits",
+    ":semanticPrefixFix"
+  ],
+  "ignorePaths": [
+    ".github/workflows/build.yml"
+  ],
+  "labels": [
+    "maintenance"
+  ],
+  "lockFileMaintenance": {
+    "automerge": true,
+    "enabled": true,
+    "semanticCommitType": "chore"
+  },
+  "packageRules": [
+    {
+      "automerge": true,
+      "matchCurrentVersion": ">=1.0.0",
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ]
+    }
+  ],
+  "rangeStrategy": "auto",
+  "semanticCommitScope": null
+}

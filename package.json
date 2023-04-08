@@ -1,0 +1,51 @@
+{
+  "name": "@dword-design/nuxt-multi-version",
+  "version": "1.0.0",
+  "private": true,
+  "repository": "dword-design/nuxt-multi-version",
+  "funding": "https://github.com/sponsors/dword-design",
+  "license": "MIT",
+  "author": "Sebastian Landwehr <info@sebastianlandwehr.com>",
+  "type": "module",
+  "exports": "./dist/index.js",
+  "main": "dist/index.js",
+  "bin": {
+    "nuxt-multi-version": "./dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "checkUnknownFiles": "base checkUnknownFiles",
+    "commit": "base commit",
+    "depcheck": "base depcheck",
+    "dev": "base dev",
+    "lint": "base lint",
+    "prepare": "base prepare",
+    "prepublishOnly": "base prepublishOnly",
+    "test": "base test"
+  },
+  "dependencies": {
+    "depcheck-package-name": "^3.0.0",
+    "execa": "^7.1.1",
+    "find-up": "^6.3.0",
+    "fs-extra": "^11.1.1",
+    "make-cli": "^3.0.2",
+    "parse-packagejson-name": "^1.0.1"
+  },
+  "devDependencies": {
+    "@dword-design/base": "^9.4.57",
+    "@dword-design/functions": "^4.1.0",
+    "@dword-design/puppeteer": "^6.0.5",
+    "nuxt": "^3.3.3",
+    "tree-kill-promise": "^3.0.9",
+    "wait-port": "^1.0.4",
+    "with-local-tmp-dir": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
